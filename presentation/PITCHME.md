@@ -23,10 +23,10 @@
 
 ---
 @snap[north span-100 text-05]
-#### Sacffold Code
+#### Scaffold Code
 @snapend
 ```sh
-rails new view_component_demo
+rails new view_components_demo
 ```
 ```sh
 rails generate scaffold Post title:string body:text
@@ -97,6 +97,13 @@ require "view_component/engine"
 @snap[north span-100 text-05]
 #### Performance
 @snapend
+@code[ruby code-power](src/posts_controller.rb)
+@[5]
+
+---
+@snap[north span-100 text-05]
+#### Performance
+@snapend
 @code[html code-power](src/new_with_component_with_loop.html.erb)
 
 ---?image=assets/images/components_vs_partials.png&position=center&size=90% 90%
@@ -109,7 +116,7 @@ require "view_component/engine"
 #### Reuse
 @snapend
 @ul[list-spaced-bullets]
-- Whereever you can use a partial, you can use a component.
+- Wherever you can use a partial, you can use a component.
 - Previews make it easy to see what is already built
 @ulend
 
@@ -147,3 +154,11 @@ require "view_component/engine"
 [github/view_component](https://github.com/github/view_component)
 
 [Rails 6.1 Component Documentation](https://edgeguides.rubyonrails.org/layouts_and_rendering.html#rendering-objects)
+
+[This Code and Presentation](https://github.com/macsrok/view_components_demo)
+
+[GitPitch](https://gitpitch.com)
+
+---
+## Questions?
+joe@joesim.ms
